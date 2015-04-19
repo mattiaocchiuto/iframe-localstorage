@@ -7,7 +7,7 @@ In order to use it is enough include the parent.js file in the parent window and
 The iframe.js file overwrite the localtStorage `setItem`, `getItem` and `removeItem` methods and provide a deferred interface to wait the result.
 
 #### Code Exaple
-Once you have included the iframe.js in your nested page, you could use the localStorage methods with the classical interface and.
+Once you have included the iframe.js in your nested page, you could use the localStorage methods with the classical interface.
 ```js
 localStorage.setItem('test', 5);
 localStorage.getItem('test')
