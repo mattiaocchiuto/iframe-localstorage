@@ -4,7 +4,20 @@ Actually is not possible to use the [localStorage][localStorage] capabilities fr
 To solve this limit I wrote this simple library that using the [postMessage][postMessage] capabilities enable the use of localStorage also in cross-domains frames.
 
 In order to use it is enough include the parent.js file in the parent window and the iframe.js file in the nested window.
-The iframe.js file overwrite the localtStorage setItem, getItem and removeItem methods and provide a deferred interface to wait the result.
+The iframe.js file overwrite the localtStorage `setItem`, `getItem` and `removeItem` methods and provide a deferred interface to wait the result.
+
+#### Code Exaple
+```js
+localStorage.setItem('test', 5);
+localStorage.getItem('test')
+    .done(function(res){
+        console.log(res);
+    });
+localStorage.removeItem('test')
+    .done(function(res){
+        // code here
+    });
+```
 
 This is a very first approach to the problem and the code need many improvement...I know :)
 
