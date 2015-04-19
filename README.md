@@ -20,6 +20,10 @@ localStorage.removeItem('test')
     });
 ```
 
+#### Dependencies
+The code I wrote in the iframe.js file have as dependencies only the [jQuery][jQuery] and [underscore][underscore] libraries.
+The code has been writed using the [UMD][UMD] pattern so you could just include and use it also in project based on AMD or Commonjs structure.
+
 This is a very first approach to the problem and the code need many improvement...I know :)
 
 Hope it can be useful in some way.
@@ -30,3 +34,6 @@ This project is licensed under the terms of MIT License. See the LICENSE file fo
 
 [localStorage]:https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 [postMessage]:https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
+[jQuery]:https://jquery.com/
+[underscore]:http://underscorejs.org/
+[UMD]:http://bob.yexley.net/umd-javascript-that-runs-anywhere/
