@@ -22,7 +22,7 @@ localStorage.removeItem('test')
 
 #### Dependencies
 The code I wrote in the iframe.js file have as dependencies only the [jQuery][jQuery] and [underscore][underscore] libraries.
-The code has been writed using the [UMD][UMD] pattern so you could just include and use it also in project based on AMD or Commonjs structure.
+The code has been writed using the [UMD][UMD] pattern so you could just include and use it also in project based on AMD or CommonJS structure.
 
 This is a very first approach to the problem and the code need many improvement...I know :)
 
