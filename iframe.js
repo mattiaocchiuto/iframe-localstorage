@@ -4,7 +4,7 @@
             factory(_, $);
         });
     } else if (typeof exports !== 'undefined') {
-        factory(require('underscore'), require('jquery');
+        factory(require('underscore'), require('jquery'));
     } else {
         factory(root._, root.jQuery);
     }
